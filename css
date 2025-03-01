@@ -1,0 +1,45 @@
+css
+
+
+/* Default Mobile View (Already provided) */
+body {
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    width: 100%;
+    margin: 10px 0;
+}
+
+img {
+    border: 5px solid blue;
+    border-radius: 35px;
+    width: 100%;
+    height: auto;
+}
+
+/* Media Query #1: Tablet View (772px and up) */
+@media (min-width: 772px) {
+    div {
+        width: 45vw; /* 45% of the viewport width */
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-height: 30vh; /* 30% of the viewport height */
+        width: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Media Query #2: Large Screen View (998px and up) */
+@media (min-width: 998px) {
+    div {
+        width: 30vw; /* 30% of the viewport width */
+    }
+}
